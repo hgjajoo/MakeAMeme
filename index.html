@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme A Meme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>Meme A Meme</h1>
+    </div>
+    <div class="meme-container">
+        <div class="file-input-container">
+            <label class="file-input-label" for="imageInput">Choose File</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <span class="no-file-chosen" id="fileChosenText">No file chosen</span>
+        <div id="memeContainer">
+            <img id="memeImage" alt="Selected Image" src="static.png">
+            <div id="topText" contenteditable="true" class="memeText">Top Text</div>
+            <div id="bottomText" contenteditable="true" class="memeText">Bottom Text</div>
+            <div class="watermark">Made using hgjajoo's MakeAMeme</div>
+        </div>
+        <br>
+        <div class="button-group">
+            <button id="increaseFontSize">Increase Font Size</button>
+            <input type="color" id="textColor" value="#ffffff" title="Text Color">
+            <button id="decreaseFontSize">Decrease Font Size</button>
+        </div>
+        <button id="downloadButton">Download Meme</button>
+    </div>
+    <div class="footer-container">
+        <div class="social-links">
+            <a href="https://www.github.com/hgjajoo/" target="_blank" title="GitHub">
+                <img src="github.png" alt="GitHub">
+            </a>
+        </div>
+        <p class="readme-link">
+            For more details, check the <a href="https://github.com/hgjajoo/MakeAMeme/#README" target="_blank">README.md</a>.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

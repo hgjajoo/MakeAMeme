@@ -1,0 +1,211 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#imageInput {
+    margin-bottom: 10px;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+#memeContainer {
+    position: relative;
+    text-align: center;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.memeText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    pointer-events: auto;
+}
+
+#topText {
+    top: 15px;
+}
+
+#bottomText {
+    bottom: 15px;
+}
+
+
+.button-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#increaseFontSize,
+#decreaseFontSize {
+    margin: 0 10px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#increaseFontSize:hover,
+#decreaseFontSize:hover {
+    background-color: #555;
+}
+
+#downloadButton {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#downloadButton:hover {
+    background-color: #555;
+}
+
+#textColor {
+    margin: 0 10px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#textColor:hover {
+    background-color: #555;
+}
+
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#imageInput {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.no-file-chosen {
+    margin-left: 10px;
+    color: #555;
+}
+
+#imageInput::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+}
+
+.file-input-label:hover {
+    background-color: #555;
+}
+
+
+/* Footer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.footer-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid #555;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-links a img {
+    width: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+.readme-link {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.readme-link a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.readme-link a:hover {
+    color: #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+}
